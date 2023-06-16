@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>dummy page</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+<body>
+    <center>
+        <h1>
+        <nav>
+            <a href="{% url 'home' %}">home</a>
+            <a href="{% url 'regi' %}">regi</a>
+            <a href="{% url 'login' %}">login</a>
+        </nav>
+         </h1>
+    </center>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+
+</body>
+</html>
